@@ -4,7 +4,8 @@
 // hero
 .hero {
   background: url('../../images/hero-bg@2x.jpg') top center;
-  height: calc(100vh - 73px);
+  // min-height: calc(100vh - 73px);
+  height: calc(100vh - 149px);
   display: flex;
   align-items: center;
 
@@ -15,7 +16,7 @@
     background-repeat: no-repeat;
   }
 
-  .containerish {
+  .containerish-fluid {
     display: grid;
     height: inherit;
 
@@ -36,7 +37,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 1rem;
+      padding: 40px;
 
       .hero-logo {
         width: 179px;
@@ -54,34 +55,7 @@
       }
 
       @include isXLarge {
-        margin-top: -90px;
-      }
-
-      .section-info {
-        // height: inherit;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        // padding: 1rem;
-        //
-        // .hero-logo {
-        //   width: 179px;
-        //   height: 134px;
-        // }
-        // h2 {
-        //   line-height: 2rem !important;
-        //
-        //   @include isXLarge {
-        //     &.shift-right {
-        //       margin-left: 8rem !important;
-        //     }
-        //   }
-        //
-        // }
-        //
-        // @include isXLarge {
-        //   margin-top: -140px;
-        // }
+        margin-top: 0px;
       }
     }
   }
@@ -90,7 +64,8 @@
 // consult
 .consult {
   height: 75px;
-  background-color: red;
+  background-color: rgba(255,255,255,.9) !important;
+  backdrop-filter: blur(10px);
 
   @include isXLarge {
     position: fixed;
@@ -101,5 +76,42 @@
 
 // about
 .about {
-  height: 2500px
+  .containerish-fluid {
+    display: grid;
+    align-items: center;
+    .sec-left {}
+    .sec-right {
+      background-color: $color-dark;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+
+      @include isXLarge {
+        padding: 0 3rem;
+      }
+      @include isRetina {
+        padding: 0 5rem;
+      }
+      .ui-btn-group {
+        @include isXLarge {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    @include isXLarge {
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+    }
+  }
+  @include isXLarge {
+    height: calc(100vh - 149px);
+  }
+}
+
+//accolades
+.accolades {
+height: calc(100vh - 149px);
 }

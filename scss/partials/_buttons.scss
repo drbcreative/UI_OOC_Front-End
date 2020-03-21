@@ -6,6 +6,13 @@
 }
 
 .ui-btn-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include isLarge {
+      flex-direction: row;
+    }
   .ui-btn:not(:last-child) {
     margin-right: 1rem;
   }
@@ -31,7 +38,8 @@
   @include btn-fade;
 
   @include isLarge {
-    width: 220px;
+    min-width: 220px;
+    max-width: 250px;
     padding:2rem 1rem;
   }
 }
