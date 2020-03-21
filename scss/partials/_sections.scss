@@ -4,7 +4,7 @@
 // hero
 .hero {
   background: url('../../images/hero-bg@2x.jpg') top center;
-  height: 100vh;
+  height: calc(100vh - 73px);
   display: flex;
   align-items: center;
 
@@ -19,38 +19,69 @@
     display: grid;
     height: inherit;
 
+    @include isLarge {
+      grid-template-columns: 75%;
+      align-items: center;
+      justify-content: center;
+    }
+
     @include isXLarge {
       grid-template-columns: 1fr 1fr;
       align-items: center;
     }
     .left-col {
       padding: 1rem;
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
 
-      .section-info {
-        height: inherit;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-
-        .hero-logo {
-          width: 179px;
-          height: 134px;
-        }
-        h2 {
-          line-height: 2rem !important;
-
-          @include isXLarge {
-            &.shift-right {
-              margin-left: 8rem !important;
-            }
-          }
-
-        }
+      .hero-logo {
+        width: 179px;
+        height: 134px;
+      }
+      h2 {
+        line-height: 2rem !important;
 
         @include isXLarge {
-          margin-top: -140px;
+          &.shift-right {
+            margin-left: 8rem !important;
+          }
         }
+
+      }
+
+      @include isXLarge {
+        margin-top: -90px;
+      }
+
+      .section-info {
+        // height: inherit;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // padding: 1rem;
+        //
+        // .hero-logo {
+        //   width: 179px;
+        //   height: 134px;
+        // }
+        // h2 {
+        //   line-height: 2rem !important;
+        //
+        //   @include isXLarge {
+        //     &.shift-right {
+        //       margin-left: 8rem !important;
+        //     }
+        //   }
+        //
+        // }
+        //
+        // @include isXLarge {
+        //   margin-top: -140px;
+        // }
       }
     }
   }
@@ -61,7 +92,7 @@
   height: 75px;
   background-color: red;
 
-  @include isLarge {
+  @include isXLarge {
     position: fixed;
     bottom: 0;
     width: 100%;
