@@ -1,4 +1,8 @@
-
+body {
+  position: relative;
+  height: 100vh;
+  padding-top: 56px;
+}
 
 .containerish {
   width: 100%;
@@ -15,4 +19,20 @@
 .container {
   width: 100%;
   max-width: 1300px;
+}
+.line-dark {
+  background-color: $color-main;
+  opacity: .49;
+  height: 1px;
+  width: 85%;
+  max-width: 304px;
+  margin: 2rem auto;
+}
+.line-light {
+  background-color: $color-white;
+  opacity: .49;
+  height: 1px;
+  width: 85%;
+  max-width: 304px;
+  margin: 2rem auto;
 }

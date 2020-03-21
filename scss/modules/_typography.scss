@@ -1,24 +1,11 @@
 /* ************************************************************************** */
 /* Typography *************************************************************** */
 /* ************************************************************************** */
-@import "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&display=swap');
 
-@font-face {
-  font-family: zurichCondensed;
-  src: url('../fonts/zurich_condensed_bt.ttf');
-  font-style: normal;
-}
 
-@font-face {
-  font-family: zurichCondensedBold;
-  src: url('../fonts/zurich_bold_condensed_bt.ttf');
-  font-style: normal;
-}
-
-$font-primary: zurichCondensed,
-sans-serif;
-$font-secondary: zurichCondensed,
-sans-serif;
+$font-primary:'Open Sans', sans-serif;
+$font-secondary: 'Playfair Display', serif;
 
 // General Font Setup
 // Headers
@@ -33,54 +20,44 @@ h5 h6 {
 /* Primary Header */
 h1 {
   font-family: $font-secondary;
-  font-size: 1.625rem; // 26px
-  line-height: 1.625rem;
-  text-transform: uppercase;
+  font-size: 3.125rem; // 50px
+  line-height: 3.125rem;
+
+  .is-dark {
+    color: $color-dark;
+  }
 }
 
 h2 {
   font-family: $font-secondary;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  text-transform: uppercase;
+  font-size: 2.5rem; // 40px
+  // line-height: 2.5rem;
+
+  .is-dark {
+    color: $color-dark;
+  }
 }
 
 h3 {
-  font-family: $font-secondary;
-  font-size: 1.5rem; // 24px
-  line-height: 1.5rem;
+  font-family: $font-primary;
+  font-size: 1.125rem; // 18px
+  line-height: 1.125rem;
+  font-weight: 700;
 
   &.is-italic {
     font-style: italic;
   }
 }
 
-h4 {
-  font-family: $font-secondary;
-  font-size: 19px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-
-h5 {
-  font-family: $font-secondary;
-  font-size: 1.6875rem; // 27px
-  line-height: 1.6875rem;
-  font-weight: 400;
-  font-style: italic;
-}
-
-h6 {
-  font-family: $font-secondary;
-  font-weight: 300;
-
+h4, h5, h6 {
+  font-family: $font-primary;
 }
 
 
 //Body Text
 .body-copy {
-  font-size: 1rem; // 16px
-  line-height: calc(1rem * 1.5);
+  font-size: 0.875rem; // 14px
+  line-height: calc(0.875rem * 2);
   font-family: $font-primary;
 
   &.is-light {
@@ -138,7 +115,7 @@ input {
   }
 
   h2 {
-    font-size: 2.5rem !important;
-    line-height: 2.5rem !important;
+    font-size: 2rem !important;
+    line-height: 2rem !important;
   }
 }
