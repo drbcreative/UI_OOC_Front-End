@@ -229,3 +229,33 @@
     padding: 40px;
   }
 }
+
+// newsletter
+.newsletter {
+  padding: 40px;
+  @include isMedium {
+    padding: 60px 40px;
+  }
+  .newsletter-form {
+    display: grid;
+    grid-gap: 2rem;
+    max-width: 1366px;
+    margin: 0 auto;
+    input {
+      border: none;
+      border-bottom: 1px solid rgba($color-dark, .2);
+
+      @include isLarge {
+        input {
+          height: 45px;
+        }
+      }
+    }
+    @include isMedium {
+      grid-template-columns: 1fr 1fr .5fr;
+    }
+    @include isLarge {
+      margin-top: 2rem;
+    }
+  }
+}
