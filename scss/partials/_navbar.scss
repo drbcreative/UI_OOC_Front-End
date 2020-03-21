@@ -16,7 +16,7 @@
   .nav-item {
     font-family: $font-primary;
     font-size: 14px;
-    margin-right: 1.5rem;
+    margin-left: 1rem;
 
     .nav-link {
       color: $color-dark;
@@ -33,7 +33,7 @@
   @include isRetina {
     position: relative;
     left: 50%;
-    transform: translateX(-55%);
+    transform: translateX(-60%);
   }
   .dropdown-menu {
     border: none;

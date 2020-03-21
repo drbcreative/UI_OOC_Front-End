@@ -161,6 +161,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/accolade-bg.jpg": {
+		"ft": 16384,
+		"iS": 149457,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/accolade-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/images/accolade-bg@2x.jpg": {
+		"ft": 16384,
+		"iS": 396874,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/accolade-bg@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/images/additional-gallery-bg@2x.jpg": {
 		"ft": 16384,
 		"iS": 364723,
