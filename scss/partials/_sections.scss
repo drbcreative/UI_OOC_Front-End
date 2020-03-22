@@ -4,7 +4,7 @@
 // hero
 
 .hero {
-  background: url("../../images/hero-bg@2x.jpg") top center;
+  background: url("../images/hero-bg@2x.jpg") top center;
   // min-height: calc(100vh - 73px);
   min-height: calc(100vh - 149px);
   display: flex;
@@ -163,7 +163,7 @@
 //accolades
 
 .accolades {
-  background: url("../../images/accolade-bg@2x.jpg");
+  background: url("../images/accolade-bg@2x.jpg");
   position: relative;
   display: grid;
 
@@ -270,7 +270,7 @@
 // why
 
 .why {
-  background: url("../../images/whychooseus-bg@2x.jpg") center center / cover;
+  background: url("../images/whychooseus-bg@2x.jpg") center center / cover;
   display: flex;
   align-items: flex-start;
   @include isMedium {
@@ -346,7 +346,7 @@
 // spotlight testimonials
 
 .spotlight {
-  background: url("../../images/testimonials-bg@2x.jpg") center center / cover;
+  background: url("../images/testimonials-bg@2x.jpg") center center / cover;
   padding: 40px;
   @include isLarge {
     padding: 60px 40px;
@@ -470,7 +470,7 @@
 
 // gallery
 .gallery {
-  background: url('../../images/additional-gallery-bg@2x.jpg') center center / cover;
+  background: url('../images/additional-gallery-bg@2x.jpg') center center / cover;
   height: 50vh;
 }
 
@@ -531,7 +531,7 @@
 
 // location
 .location {
-  background: url('../../images/fooater-map@2x.jpg') center center / cover;
+  background: url('../images/fooater-map@2x.jpg') center center / cover;
   @include isMedium {
     padding: 40px;
   }
