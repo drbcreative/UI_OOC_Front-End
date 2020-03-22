@@ -415,3 +415,104 @@
     }
   }
 }
+
+// gallery
+.gallery {
+  background: url('../../images/additional-gallery-bg@2x.jpg') center center / cover;
+  height: 50vh;
+}
+
+// blog
+.blog {
+  background-color: $color-dark;
+  padding: 40px;
+
+
+  .containerish {
+    display: grid;
+    grid-template-columns: 75%;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include isMedium {
+      grid-template-columns: 1fr 1fr;
+      padding: 60px 40px;
+    }
+
+    .col-left, .col-right {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+
+      @include isMedium {
+        grid-template-columns: max-content 1fr;
+        grid-gap: 1rem;
+        align-items: flex-start;
+      }
+      @include isXLarge {
+        grid-template-columns: max-content 1fr;
+        grid-gap: 1rem;
+        align-items: center;
+      }
+      img {
+        margin-bottom: 1rem;
+
+        @include isMedium {
+          max-width: 150px;
+          max-height: 150px;
+          margin-bottom: 0;
+        }
+      }
+      a {
+        @include isMedium {
+          // grid-row: 1;
+          grid-column: 2;
+        }
+      }
+    }
+  }
+}
+
+// location
+.location {
+  background: url('../../images/fooater-map@2x.jpg') center center / cover;
+  @include isMedium {
+    padding: 40px;
+  }
+  @include isLarge {
+    padding: 60px 40px;
+  }
+  .containerish {
+    background-color: rgba(255,255,255,0.85);
+    padding: 40px;
+    display: grid;
+    grid-gap: 2rem;
+    justify-content: center;
+    max-width: 665px;
+    margin: 0;
+
+    @include isMedium {
+      box-shadow: 0 0 50px rgba(0,0,0,.16);
+      grid-template-columns: 2fr 1fr;
+      justify-content: flex-start;
+    }
+    .location-info {
+      table {
+        font-family: $font-primary;
+        font-size: 18px;
+      }
+    }
+    .big-logo {
+      max-width: 200px;
+      justify-self: center;
+
+      @include isMedium {
+        align-self: flex-end;
+      }
+    }
+  }
+}

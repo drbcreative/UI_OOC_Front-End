@@ -75,9 +75,13 @@ h4, h5, h6 {
 
 /* Lead Text (hero) */
 .lead-copy {
-  font-size: 1.5rem; // 24px
-  line-height: calc(1.5rem * 1.5);
+  font-size: 1.125rem; // 18px
+  line-height: calc(1.125rem * 1.5);
   font-family: $font-primary;
+
+  &.is-bold {
+    font-weight: 700;
+  }
 }
 
 /*Testimonial Copy */
@@ -85,6 +89,13 @@ h4, h5, h6 {
   font-family: $font-secondary;
   font-size: 30px;
   font-style: italic;
+}
+/*Blog Caption Copy */
+.blog-caption {
+  font-family: $font-primary;
+  font-size: 1.125rem;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 /* Footer2 Text */
