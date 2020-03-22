@@ -161,17 +161,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/images/accolade-bg.jpg": {
-		"ft": 16384,
-		"iS": 149457,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/images/accolade-bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"/images/accolade-bg@2x.jpg": {
 		"ft": 16384,
 		"iS": 396874,
@@ -315,6 +304,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/quote-icon.png": {
+		"ft": 32768,
+		"iS": 1582,
+		"oA": 0,
+		"oAP": "/images/quote-icon.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/quote-icon@2x.png": {
+		"ft": 32768,
+		"iS": 7304,
+		"oA": 0,
+		"oAP": "/images/quote-icon@2x.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/reconstruct-surg-bg@2x.jpg": {
 		"ft": 16384,
 		"iS": 75483,
@@ -324,6 +335,50 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/images/spotlight-1.jpg": {
+		"ft": 16384,
+		"iS": 15499,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/spotlight-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/images/spotlight-1@2x.jpg": {
+		"ft": 16384,
+		"iS": 48298,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/spotlight-1@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/images/spotlight-2.jpg": {
+		"ft": 16384,
+		"iS": 13905,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/spotlight-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/images/spotlight-2@2x.jpg": {
+		"ft": 16384,
+		"iS": 43112,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/spotlight-2@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/testimonials-bg@2x.jpg": {
