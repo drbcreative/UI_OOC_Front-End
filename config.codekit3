@@ -839,14 +839,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/UI_OOC_Front-End.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/UI_OOC_Front-End.zip",
-		"oF": 0
 		}
 	},
 "hooks": [
